@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">XYZ Reader</string>
+
+    <string name="action_share">Share</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="pref_type_mode" translatable="false">com.example.xyzreader.pref.type.mode</string>
+    <string name="pref_share_text" translatable="false">com.example.xyzreader.pref.share.text</string>
+    <string name="pref_share_title" translatable="false">com.example.xyzreader.pref.share.title</string>
+
+    <string name="image_description_app">XYZ Reader Android Nanodegree</string>
+    <string name="image_description_image">XYZ Reader Android Nanodegree Image</string>
+    <string name="url_app" translatable="false">http://xyzreader.pelleritoudacity.info</string>
+
+    <string name="title_menu_home">Home - Refresh</string>
+    <string name="title_menu_mode_single">Double Pictures</string>
+    <string name="title_menu_mode_multi">Multi Pictures</string>
+
+    <string name="title_menu_mode_small_text">Small Text Mode</string>
+    <string name="title_menu_mode_full_text">Full Text Mode</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_base">Base XYZ-Reader</string>
+
+    <string name="ellipsis">\u0020[Continue]\u2026</string>
+    <string name="share">Share</string>
+
+</resources>

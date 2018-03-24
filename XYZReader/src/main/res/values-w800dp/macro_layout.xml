@@ -1,0 +1,18 @@
+<resources>
+    <!-- base -->
+    <dimen name="base_navigation_bar_height">250dp</dimen>
+
+
+    <!-- list -->
+    <dimen name="list_side_margin">8dp</dimen>
+    <dimen name="list_side_padding_top">8dp</dimen>
+    <dimen name="list_side_padding_bottom">24dp</dimen>
+    <dimen name="list_card_horiz_margin">8dp</dimen>
+
+    <!-- detail -->
+
+    <dimen name="detail_photo_height">400dp</dimen>
+
+    <dimen name="detail_body_top_margin">16dp</dimen>
+    <dimen name="detail_body_bottom_margin">88dp</dimen>
+</resources>

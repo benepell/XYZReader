@@ -1,0 +1,4 @@
+<resources>
+    <!-- detail -->
+    <item name="detail_line_spacing_multiplier_body" format="float" type="fraction">1.1</item>
+</resources>

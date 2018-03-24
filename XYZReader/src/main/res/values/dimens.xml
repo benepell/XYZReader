@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="base_navigation_padding_vertical">16dp</dimen>
+    <dimen name="base_navigation_padding_horizontal">16dp</dimen>
+
+
+    <dimen name="list_app_bar_elevation">8dp</dimen>
+
+
+    <dimen name="list_padding_vertical_title">8dp</dimen>
+    <dimen name="list_padding_horizontal_title">8dp</dimen>
+    <dimen name="list_padding_horizontal_subtitle">8dp</dimen>
+
+    <dimen name="list_padding_vertical_author">8dp</dimen>
+    <dimen name="list_padding_horizontal_author">8dp</dimen>
+
+
+    <dimen name="detail_progress_bar_min_width">70dp</dimen>
+    <dimen name="detail_progress_bar_min_height">70dp</dimen>
+
+    <item name="detail_line_spacing_multiplier_body" format="float" type="fraction">1.1</item>
+
+    <dimen name="detail_floating_toolbar_horizontal_margin">16dp</dimen>
+    <dimen name="detail_floating_toolbar_vertical_margin">8dp</dimen>
+</resources>

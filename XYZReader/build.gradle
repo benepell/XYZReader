@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    google()
+    jcenter()
+}
+
+android {
+    compileSdkVersion rootProject.sdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.sdkVersion
+    }
+
+    buildTypes.each {
+        //  UDACITY URL
+        it.buildConfigField 'String', 'BASE_URL', '\"https://go.udacity.com/xyz-reader-json\"'
+    }
+
+}
+
+dependencies {
+    implementation "com.android.support:support-v4:${rootProject.ext.androidSupportVersion}"
+    implementation "com.android.support:support-v13:${rootProject.ext.androidSupportVersion}"
+
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.androidSupportVersion}"
+
+    implementation "com.android.support:palette-v7:${rootProject.ext.androidSupportVersion}"
+    implementation "com.android.support:recyclerview-v7:${rootProject.ext.androidSupportVersion}"
+    implementation "com.android.support:cardview-v7:${rootProject.ext.androidSupportVersion}"
+    implementation "com.android.support:design:${rootProject.ext.androidSupportVersion}"
+    implementation "com.android.support:preference-v7:${rootProject.ext.androidSupportVersion}"
+
+    implementation "com.jakewharton.timber:timber:${rootProject.ext.timberVersion}"
+
+    implementation "com.jakewharton:butterknife:${rootProject.ext.butterKnifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${rootProject.ext.butterKnifeVersion}"
+
+    implementation "com.github.bumptech.glide:glide:${rootProject.ext.glideVersion}"
+    annotationProcessor "com.github.bumptech.glide:compiler:${rootProject.ext.glideVersion}"
+    implementation "com.github.bumptech.glide:okhttp3-integration:${rootProject.ext.glideOkHttpIntegretionVersion}"
+
+    implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.okHttpVersion}"
+
+    implementation "com.mikepenz:iconics-core:${rootProject.ext.mikepenzIconicsVersion}"
+    implementation "com.mikepenz:material-design-iconic-typeface:${rootProject.ext.mikepenzMaterialDesignIconicsVersion}"
+
+    implementation "com.andkulikov:transitionseverywhere:${rootProject.ext.andkulikovTransitionVersion}"
+
+    implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original@aar'
+
+    implementation files('libs/volley.jar')
+}

@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/list_card_horiz_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+<!-- app:cardCornerRadius="8dp"
+    app:cardElevation="2dp" -->
+    <LinearLayout
+        android:id="@+id/article_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/photo_placeholder"
+        android:orientation="vertical">
+
+        <!--suppress AndroidLintContentDescription -->
+        <!--setting in code -->
+        <com.example.xyzreader.ui.view.DynamicHeightNetworkImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/photo_placeholder"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/article_list_title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="@integer/list_body_text_title"
+            android:paddingBottom="@dimen/list_padding_vertical_title"
+            android:paddingEnd="@dimen/list_padding_horizontal_title"
+            android:paddingStart="@dimen/list_padding_horizontal_title"
+            android:paddingTop="@dimen/list_padding_vertical_title"
+            android:textColor="@color/textColorBackground" />
+
+        <TextView
+            android:id="@+id/article_subtitle"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_thin"
+            android:maxLines="@integer/list_body_text_subtitle"
+            android:paddingEnd="@dimen/list_padding_horizontal_subtitle"
+            android:paddingStart="@dimen/list_padding_horizontal_subtitle"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/article_author"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_thin"
+            android:maxLines="@integer/list_body_text_author"
+            android:paddingBottom="@dimen/list_padding_vertical_author"
+            android:paddingEnd="@dimen/list_padding_horizontal_author"
+            android:paddingStart="@dimen/list_padding_horizontal_author"
+            android:textColor="@color/textColorBackground"
+            android:textStyle="italic" />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
