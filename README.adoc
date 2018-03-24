@@ -28,7 +28,6 @@ Make a single GitHub repo with your code for the app and submit it through the N
 
 * [Glide](https://github.com/bumptech/glide)
 * [OkHttp](https://github.com/square/okhttp)
-* [Retrofit 2](https://square.github.io/retrofit/)
 * [Butter Knife](https://jakewharton.github.io/butterknife/)
 * [Android-Iconics](https://github.com/mikepenz/Android-Iconics)
 * [Volley](https://github.com/google/volley)
