@@ -141,7 +141,7 @@
         android:clickable="true"
         android:contentDescription="@string/action_share"
         android:focusable="true"
-        app:elevation="4dp"
+        app:elevation="@dimen/detail_floating_toolbar_elevation"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end" />
 

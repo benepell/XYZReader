@@ -1,3 +1,26 @@
+/*
+ *  _    _  _     _  _______     ___                      _
+ * ( )  ( )( )   ( )(_____  )   |  _`\                   ( )
+ * `\`\/'/'`\`\_/'/'     /'/'   | (_) )   __     _ _    _| |   __   _ __
+ *   >  <    `\ /'     /'/'     | ,  /  /'__`\ /'_` ) /'_` | /'__`\( '__)
+ *  /'/\`\    | |    /'/'___    | |\ \ (  ___/( (_| |( (_| |(  ___/| |
+ * (_)  (_)   (_)   (_______)   (_) (_)`\____)`\__,_)`\__,_)`\____)(_)
+ *
+ * Copyright (C) 2018 Benedetto Pellerito
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.example.xyzreader.ui.activity;
 
 import android.content.BroadcastReceiver;
@@ -8,6 +31,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -57,8 +81,6 @@ public class ArticleListActivity extends BaseActivity implements
 
         getSupportLoaderManager().initLoader(0, null, this);
 
-        Utility.applyColorBar(getApplicationContext(), getSupportActionBar());
-
         mAdapter = new ArticleListAdapter(mRecyclerView);
 
         int columnCount;
@@ -83,15 +105,11 @@ public class ArticleListActivity extends BaseActivity implements
         mRecyclerView.setAdapter(mAdapter);
 
         if (savedInstanceState == null) {
-            refresh();
+            onRefresh();
         }
         PrefManager.clearPref(getApplicationContext());
     }
 
-
-    private void refresh() {
-        startService(new Intent(this, UpdaterService.class));
-    }
 
     @Override
     protected void onStart() {
@@ -141,10 +159,17 @@ public class ArticleListActivity extends BaseActivity implements
         mAdapter.swapCursor(null);
     }
 
-
     @Override
     public void onRefresh() {
-        startService(new Intent(this, UpdaterService.class));
+        if (Utility.isOnline(getApplicationContext())) {
+            startService(new Intent(this, UpdaterService.class));
+
+        } else {
+            mIsRefreshing = false;
+            Snackbar.make(findViewById(R.id.article_list_container), R.string.list_snackbar_offline_text, Snackbar.LENGTH_LONG).show();
+            updateRefreshingUI();
+        }
+
     }
 
 

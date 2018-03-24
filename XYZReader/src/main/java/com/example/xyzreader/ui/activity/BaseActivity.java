@@ -30,7 +30,6 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -44,7 +43,6 @@ import android.view.ViewStub;
 import android.widget.Toast;
 
 import com.example.xyzreader.R;
-import com.example.xyzreader.service.UpdaterService;
 import com.example.xyzreader.utility.Costants;
 import com.example.xyzreader.utility.PrefManager;
 import com.mikepenz.iconics.IconicsDrawable;
@@ -54,7 +52,7 @@ import butterknife.ButterKnife;
 import timber.log.Timber;
 
 public class BaseActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, SwipeRefreshLayout.OnRefreshListener {
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     private int mLayoutResource;
 
@@ -391,9 +389,6 @@ public class BaseActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public void onRefresh() {
-        startService(new Intent(this, UpdaterService.class));
-    }
+
 }
 

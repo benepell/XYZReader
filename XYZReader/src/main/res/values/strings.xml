@@ -28,4 +28,8 @@
     <string name="ellipsis">\u0020[Continue]\u2026</string>
     <string name="share">Share</string>
 
+    <string name="list_snackbar_offline_text">No Internet connection &#8230; \n swipe here to try again.</string>
+
+
+
 </resources>
