@@ -28,9 +28,10 @@ In this project you will:
 - [x] App uses fonts that are either the Android defaults, are complementary, and aren't otherwise distracting.
 - [x] App conforms to common standards found in the Android Nanodegree General Project Guidelines.
 
+<!--
 ## Screens
 
-<!-- ![screen](https://user-images.githubusercontent.com/18085976/32411293-8fe77754-c1ad-11e7-860f-2062db16e73a.png) -->
+ ![screen](https://user-images.githubusercontent.com/18085976/32411293-8fe77754-c1ad-11e7-860f-2062db16e73a.png) -->
 
 
 ## Libraries
