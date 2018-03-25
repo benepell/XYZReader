@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:layout_scrollFlags="enterAlways|exitUntilCollapsed"
         app:popupTheme="@style/AppTheme.PopupOverlay">
 
         <ImageView

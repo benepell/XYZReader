@@ -25,7 +25,7 @@ android {
 
     buildTypes.each {
         //  UDACITY URL
-        it.buildConfigField 'String', 'BASE_URL', '\"https://go.udacity.com/xyz-reader-json\"'
+        it.buildConfigField 'String', 'BASE_URL', '\"https://raw.githubusercontent.com/TNTest/xyzreader/master/data.json\"'
     }
 
 }
