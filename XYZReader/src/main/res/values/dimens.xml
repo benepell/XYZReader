@@ -4,9 +4,6 @@
     <dimen name="base_navigation_padding_horizontal">16dp</dimen>
 
 
-    <dimen name="list_app_bar_elevation">4dp</dimen>
-
-
     <dimen name="list_padding_vertical_title">8dp</dimen>
     <dimen name="list_padding_horizontal_title">8dp</dimen>
     <dimen name="list_padding_horizontal_subtitle">8dp</dimen>
@@ -15,7 +12,6 @@
     <dimen name="list_padding_horizontal_author">8dp</dimen>
 
 
-    <dimen name="detail_floating_toolbar_elevation">6dp</dimen>
     <dimen name="detail_progress_bar_min_width">70dp</dimen>
     <dimen name="detail_progress_bar_min_height">70dp</dimen>
 

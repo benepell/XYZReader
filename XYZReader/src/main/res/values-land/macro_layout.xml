@@ -2,19 +2,24 @@
     <!-- base -->
     <dimen name="base_navigation_bar_height">180dp</dimen>
 
+    <dimen name="list_app_bar_elevation">4dp</dimen>
     <dimen name="list_side_margin">4dp</dimen>
     <dimen name="list_side_padding_top">4dp</dimen>
     <dimen name="list_side_padding_bottom">24dp</dimen>
     <dimen name="list_card_horiz_margin">4dp</dimen>
+    <dimen name="list_card_elevation">2dp</dimen>
 
 
 
 
     <!-- detail -->
+    <dimen name="detail_app_bar_elevation">4dp</dimen>
     <dimen name="detail_photo_height">168dp</dimen>
     <dimen name="detail_inner_horiz_margin">60dp</dimen>
 
     <!-- force match_parent -->
+    <dimen name="detail_floating_toolbar_elevation">6dp</dimen>
+
     <dimen name="detail_metabar_height">60dp</dimen>
     <dimen name="detail_metabar_vert_padding">8dp</dimen>
     <dimen name="detail_body_top_margin">16dp</dimen>

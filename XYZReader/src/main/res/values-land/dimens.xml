@@ -4,9 +4,6 @@
     <dimen name="base_navigation_padding_horizontal">16dp</dimen>
 
 
-    <dimen name="list_app_bar_elevation">4dp</dimen>
-
-
     <dimen name="list_padding_vertical_title">4dp</dimen>
     <dimen name="list_padding_horizontal_title">8dp</dimen>
     <dimen name="list_padding_horizontal_subtitle">8dp</dimen>
