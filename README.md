@@ -3,32 +3,30 @@
 It was evaluated by certified [Udacity](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801) code reviewer and was graded as "Exceeds Specifications".
 
 ## Why this Project?
-As a working Android developer, you often have to create and implement apps where you are responsible for designing and planning the steps you need to take to create a production-ready app. Unlike Popular Movies where we gave you an implementation guide, it will be up to you to figure things out for the Baking App.
+This project gives you an opportunity to improve an app’s design, a vital skill for building apps users will love. It also replicates a common developer task of updating and changing an app's design as new standards are released.
 
 ## What Will I Learn?
 In this project you will:
-* Use MediaPlayer/Exoplayer to display videos.
-* Handle error cases in Android.
-* Add a widget to your app experience.
-* Leverage a third-party library in your app.
-* Use Fragments to create a responsive design that works on phones and tablets.
-
+* Understand the fundamentals of Android design.
+* Apply Material Design guidelines to an mobile application.
+* Separate an interface into surfaces.
+* Effectively use transitions and motion.
 
 ## Rubric
 
-### General App Usage
-- [x] App should display recipes from provided network resource.
-- [x] App should allow navigation between individual recipes and recipe steps.
-- [x] App uses RecyclerView and can handle recipe steps that include videos or images.
-- [x] App conforms to common standards found in the Android Nanodegree General Project Guidelines.
+### Meet Specification
 
-### Components and Libraries
-- [x] Application uses Master Detail Flow to display recipe steps and navigation between them.
-- [x] Application uses Exoplayer to display videos.
-- [x] Application properly initializes and releases video assets when appropriate.
-- [x] Application should properly retrieve media assets from the provided network links. It should properly handle network requests.
-- [x] Application makes use of Espresso to test aspects of the UI.
-- [x] Application sensibly utilizes a third-party library to enhance the app's features. That could be helper library to interface with Content Providers if you choose to store the recipes, a UI binding library to avoid writing findViewById a bunch of times, or something similar.
+- [x] App uses the Design Support library and its provided widget types (FloatingActionButton, AppBarLayout, SnackBar, etc).
+- [x] App uses CoordinatorLayout for the main Activity.
+- [x] App theme extends from AppCompat.
+- [x] App uses an AppBar and associated Toolbars.
+- [x] App provides a Floating Action Button for the most common action(s).
+- [x] App properly specifies elevations for app bars, FABs, and other elements specified in the Material Design specification.
+- [x] App has a consistent color theme defined in styles.xml. Color theme does not impact usability of the app.
+- [x] App provides sufficient space between text and surrounding elements.
+- [x] App uses images that are high quality, specific, and full bleed.
+- [x] App uses fonts that are either the Android defaults, are complementary, and aren't otherwise distracting.
+- [x] App conforms to common standards found in the Android Nanodegree General Project Guidelines.
 
 ## Screens
 
